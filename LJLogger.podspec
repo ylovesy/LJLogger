@@ -13,27 +13,19 @@ Pod::Spec.new do |s|
   s.summary      = "Log module for Lianjia"
   s.description  = "Help to positioning problem"
 
-  s.homepage     = "http://EXAMPLE/LJLogger"
+  s.homepage     = "https://github.com/ylovesy/LJLogger"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   s.author             = { "yangyiyang" => "yangyiyang@lianjia.com" }
 
-  s.source       = { :git => "http://EXAMPLE/LJLogger.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ylovesy/LJLogger.git", :tag => "#{s.version}" }
   s.ios.deployment_target = '7.0'
 
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
+  s.source_files  = 'LJLogger/*.{h,m,mm,c,cpp}'
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.vendored_frameworks = "LJLogger/*.{framework}"
 
-  # s.public_header_files = "Classes/**/*.h"
-
+  s.library = 'z'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -60,8 +52,6 @@ Pod::Spec.new do |s|
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-
-  s.ios.vendored_libraries = 'LJLogger/Log.framework'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = "LJLogger/*.{framework}"
 
-  s.library = 'z'
+  s.libraries = "z", "stdc++"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

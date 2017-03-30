@@ -10,6 +10,7 @@
 		1B47B3DB1E8CB66C0002927D /* LJLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B47B3D81E8CB66C0002927D /* LJLogger.mm */; };
 		1B47B3DD1E8CB8840002927D /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B47B3DC1E8CB8840002927D /* Log.framework */; };
 		1B47B3E01E8CB8A80002927D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B47B3DF1E8CB8A80002927D /* libz.tbd */; };
+		1B47B4A61E8D02520002927D /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B47B4A51E8D02520002927D /* libstdc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1B47B3DA1E8CB66C0002927D /* LJLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJLog.h; sourceTree = "<group>"; };
 		1B47B3DC1E8CB8840002927D /* Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Log.framework; sourceTree = "<group>"; };
 		1B47B3DF1E8CB8A80002927D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1B47B4A51E8D02520002927D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B47B4A61E8D02520002927D /* libstdc++.tbd in Frameworks */,
 				1B47B3E01E8CB8A80002927D /* libz.tbd in Frameworks */,
 				1B47B3DD1E8CB8840002927D /* Log.framework in Frameworks */,
 			);
@@ -73,6 +76,7 @@
 		1B47B3DE1E8CB8A70002927D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B47B4A51E8D02520002927D /* libstdc++.tbd */,
 				1B47B3DF1E8CB8A80002927D /* libz.tbd */,
 			);
 			name = Frameworks;
@@ -301,6 +305,7 @@
 				1B47B3D31E8CB5540002927D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
